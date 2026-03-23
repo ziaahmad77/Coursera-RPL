@@ -1,0 +1,15 @@
+# Perintah Curl untuk mengecek status fork repositori
+curl -s https://api.github.com/repos/[ziaahmad77]/mcino-Introduction-to-Git-and-GitHub | grep -E "fork\":|parent" -A 10
+
+# Output Terminal:
+{
+  "fork": true,
+  "parent": {
+    "id": 352847241,
+    "node_id": "MDEwOlJlcG9zaXRvcnkzNTI4NDcyNDE=",
+    "name": "mcino-Introduction-to-Git-and-GitHub",
+    "full_name": "ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub",
+    "private": false,
+    "owner": {
+      "login": "ibm-developer-skills-network",
+...
